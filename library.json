@@ -1,0 +1,21 @@
+{
+    "name": "core2foraws-unit-heart",
+    "version": "0.0.1",
+    "description": "Peripheral driver for the M5Stack Unit Heart (MAX30100 pulse oximeter / heart-rate sensor) on the Core2 for AWS IoT Kit",
+    "keywords": "heart, max30100, spo2, pulse-oximeter, heart-rate, m5stack, aws, core2, edukit",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/rashedtalukder/core2foraws-unit-heart.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Rashed Talukder",
+        "maintainer": true
+      }
+    ],
+    "license": "Apache 2.0",
+    "frameworks": ["espidf", "freertos"],
+    "platforms": ["espressif32"]
+  }

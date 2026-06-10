@@ -1,0 +1,20 @@
+menu "Unit Heart Configuration"
+
+    config UNIT_HEART_USE_PAHUB
+        bool "Use PA Hub for I2C communication"
+        default false
+        help
+            Enable this option to use PA Hub for I2C communication with Unit
+            Heart. When enabled, the sensor communicates through the specified
+            PA Hub channel instead of a direct connection to PORT.A.
+
+    config UNIT_HEART_PAHUB_CHANNEL
+        int "PA Hub channel number"
+        depends on UNIT_HEART_USE_PAHUB
+        range 0 5
+        default 0
+        help
+            Specify the PA Hub channel (0-5) that Unit Heart is plugged in to.
+            This setting is only used when PA Hub support is enabled.
+
+endmenu
